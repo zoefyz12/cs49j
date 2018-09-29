@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="Submission" content="/tmp/codecheck/17032119494034119097903095383/submission"/>
+<meta name="Problem" content="17030916426sgwm7x4t2g5b7qfbymn6zv5c"/>
+<meta name="Level" content="1"/>
+<meta name="Time" content="2017-03-21T19:49:51Z"/>
+<meta name="ID" content="Gradebook"/>
+<meta name="Elapsed" content="1019 ms"/>
+<style type="text/css">
+.header {font-weight: bold; font-size: 1.2em; }
+.item {font-weight: bold;}
+.pass {color: green;}
+.fail {color: red;}
+table.file td {padding-right: 1em; background: #FFF; }
+.linenumber {color: gray;}
+.footnote {font-size: 0.7em;}
+table {font-size: 0.9em;}
+td, th { background: #EEE; margin: 0.5em; padding: 0.25em;}
+table.output td {vertical-align: top;}
+div.footnotes { border-top: 1px solid gray; padding-top: 0.5em; }
+</style>
+<title>Report</title>
+</head>
+<body>
+<p class="header tester">Testers</p>
+<div class="tester">
+<p class="item">Running GradebookTester.java</p>
+<span class="pass">pass </span><span class="pass">pass </span><span class="pass">pass </span><span class="pass">pass </span><pre class="output">91.33
+<span class="pass">Expected: 91.33</span>
+93.79
+<span class="pass">Expected: 93.79</span>
+93.28
+<span class="pass">Expected: 93.28</span>
+0.0
+<span class="pass">Expected: 0</span>
+</pre>
+</div>
+<p class="header studentFiles">Student files</p>
+<div class="studentFiles">
+<p class="caption">Gradebook.java:</p>
+<table class="file"><tr><td><pre><span class="linenumber">  1</span>
+<span class="linenumber">  2</span>
+<span class="linenumber">  3</span>
+<span class="linenumber">  4</span>
+<span class="linenumber">  5</span>
+<span class="linenumber">  6</span>
+<span class="linenumber">  7</span>
+<span class="linenumber">  8</span>
+<span class="linenumber">  9</span>
+<span class="linenumber"> 10</span>
+<span class="linenumber"> 11</span>
+<span class="linenumber"> 12</span>
+<span class="linenumber"> 13</span>
+<span class="linenumber"> 14</span>
+<span class="linenumber"> 15</span>
+<span class="linenumber"> 16</span>
+<span class="linenumber"> 17</span>
+<span class="linenumber"> 18</span>
+<span class="linenumber"> 19</span>
+<span class="linenumber"> 20</span>
+<span class="linenumber"> 21</span>
+<span class="linenumber"> 22</span>
+<span class="linenumber"> 23</span>
+<span class="linenumber"> 24</span>
+<span class="linenumber"> 25</span>
+<span class="linenumber"> 26</span>
+<span class="linenumber"> 27</span>
+<span class="linenumber"> 28</span>
+<span class="linenumber"> 29</span>
+<span class="linenumber"> 30</span>
+</pre></td><td><pre>
+import java.util.ArrayList;
+
+public class Gradebook {
+
+	private ArrayList&lt;Student&gt; gradebook;
+	public Gradebook()
+	{
+		gradebook = new ArrayList&lt;Student&gt;();
+	}
+	public void add(Student s) 
+	{
+		gradebook.add(s);
+	}
+	public double getClassAverage()
+	{
+		if (gradebook.size() == 0)
+		{
+			return  0;
+		}
+		double average = 0.0;
+		double sum = 0.0;
+		for (Student s : gradebook)
+		{
+			sum = sum + s.getAverage();
+		}
+		average = sum / gradebook.size();
+		return average;
+	}
+}
+</pre></td></tr></table>
+</div>
+<p class="header providedFiles">Provided files</p>
+<div class="providedFiles">
+<p class="caption">GradebookTester.java:</p>
+<table class="file"><tr><td><pre><span class="linenumber">  1</span>
+<span class="linenumber">  2</span>
+<span class="linenumber">  3</span>
+<span class="linenumber">  4</span>
+<span class="linenumber">  5</span>
+<span class="linenumber">  6</span>
+<span class="linenumber">  7</span>
+<span class="linenumber">  8</span>
+<span class="linenumber">  9</span>
+<span class="linenumber"> 10</span>
+<span class="linenumber"> 11</span>
+<span class="linenumber"> 12</span>
+<span class="linenumber"> 13</span>
+<span class="linenumber"> 14</span>
+<span class="linenumber"> 15</span>
+<span class="linenumber"> 16</span>
+<span class="linenumber"> 17</span>
+<span class="linenumber"> 18</span>
+<span class="linenumber"> 19</span>
+<span class="linenumber"> 20</span>
+<span class="linenumber"> 21</span>
+<span class="linenumber"> 22</span>
+<span class="linenumber"> 23</span>
+<span class="linenumber"> 24</span>
+<span class="linenumber"> 25</span>
+<span class="linenumber"> 26</span>
+<span class="linenumber"> 27</span>
+<span class="linenumber"> 28</span>
+<span class="linenumber"> 29</span>
+<span class="linenumber"> 30</span>
+<span class="linenumber"> 31</span>
+<span class="linenumber"> 32</span>
+<span class="linenumber"> 33</span>
+<span class="linenumber"> 34</span>
+<span class="linenumber"> 35</span>
+<span class="linenumber"> 36</span>
+<span class="linenumber"> 37</span>
+<span class="linenumber"> 38</span>
+<span class="linenumber"> 39</span>
+<span class="linenumber"> 40</span>
+<span class="linenumber"> 41</span>
+<span class="linenumber"> 42</span>
+<span class="linenumber"> 43</span>
+</pre></td><td><pre>
+/**
+ * A tester for the Gradebook class
+ * 
+
+ */
+public class GradebookTester
+{
+    public static void main(String[] args)
+    {
+        Gradebook grades = new Gradebook();
+       
+        Student student1 = new Student("James");
+        student1.addScore(89);
+        student1.addScore(90);
+        student1.addScore(95);
+        grades.add(student1);
+        System.out.printf("%.2f%n", grades.getClassAverage());
+        System.out.println("Expected: 91.33");
+         
+        Student student2 = new Student("Carlos");
+        student2.addScore(100);
+        student2.addScore(92);
+        student2.addScore(95);
+        student2.addScore(98);
+        grades.add(student2);
+        System.out.printf("%.2f%n", grades.getClassAverage());
+        System.out.println("Expected: 93.79");
+
+        Student student3 = new Student("Sridivya");
+        student3.addScore(89);
+        student3.addScore(100);
+        student3.addScore(95);
+        student3.addScore(85);
+        grades.add(student3);
+        System.out.printf("%.2f%n", grades.getClassAverage());
+        System.out.println("Expected: 93.28");
+        
+        grades = new Gradebook();
+        System.out.println(grades.getClassAverage());
+        System.out.println("Expected: 0");        
+    }
+}
+</pre></td></tr></table>
+<p class="caption">Student.java:</p>
+<table class="file"><tr><td><pre><span class="linenumber">  1</span>
+<span class="linenumber">  2</span>
+<span class="linenumber">  3</span>
+<span class="linenumber">  4</span>
+<span class="linenumber">  5</span>
+<span class="linenumber">  6</span>
+<span class="linenumber">  7</span>
+<span class="linenumber">  8</span>
+<span class="linenumber">  9</span>
+<span class="linenumber"> 10</span>
+<span class="linenumber"> 11</span>
+<span class="linenumber"> 12</span>
+<span class="linenumber"> 13</span>
+<span class="linenumber"> 14</span>
+<span class="linenumber"> 15</span>
+<span class="linenumber"> 16</span>
+<span class="linenumber"> 17</span>
+<span class="linenumber"> 18</span>
+<span class="linenumber"> 19</span>
+<span class="linenumber"> 20</span>
+<span class="linenumber"> 21</span>
+<span class="linenumber"> 22</span>
+<span class="linenumber"> 23</span>
+<span class="linenumber"> 24</span>
+<span class="linenumber"> 25</span>
+<span class="linenumber"> 26</span>
+<span class="linenumber"> 27</span>
+<span class="linenumber"> 28</span>
+<span class="linenumber"> 29</span>
+<span class="linenumber"> 30</span>
+<span class="linenumber"> 31</span>
+<span class="linenumber"> 32</span>
+<span class="linenumber"> 33</span>
+<span class="linenumber"> 34</span>
+<span class="linenumber"> 35</span>
+<span class="linenumber"> 36</span>
+<span class="linenumber"> 37</span>
+<span class="linenumber"> 38</span>
+<span class="linenumber"> 39</span>
+<span class="linenumber"> 40</span>
+<span class="linenumber"> 41</span>
+<span class="linenumber"> 42</span>
+<span class="linenumber"> 43</span>
+<span class="linenumber"> 44</span>
+<span class="linenumber"> 45</span>
+<span class="linenumber"> 46</span>
+<span class="linenumber"> 47</span>
+<span class="linenumber"> 48</span>
+<span class="linenumber"> 49</span>
+<span class="linenumber"> 50</span>
+<span class="linenumber"> 51</span>
+<span class="linenumber"> 52</span>
+<span class="linenumber"> 53</span>
+<span class="linenumber"> 54</span>
+<span class="linenumber"> 55</span>
+<span class="linenumber"> 56</span>
+<span class="linenumber"> 57</span>
+<span class="linenumber"> 58</span>
+<span class="linenumber"> 59</span>
+<span class="linenumber"> 60</span>
+</pre></td><td><pre>import java.util.ArrayList;
+/**
+ * Models a student with a name and a list of grades
+ * @author kathleenobrien
+ *
+ */
+public class Student
+{
+    private String name;
+    private ArrayList&lt;Integer&gt; grades;
+    
+    /**
+     * Constructs a Student object with a name and no grades
+     * @param name the student's name
+     */
+    public Student(String name)
+    {
+        this.name = name;
+        grades = new ArrayList&lt;Integer&gt;();
+    }
+    
+    /**
+     * Adds a score for this student
+     * @param score the new score to add
+     */
+    public void addScore(int score)
+    {
+        grades.add(score);
+    }
+    
+    /**
+     * Gets the average of this student's grade
+     * @return the average grade for this student
+     */
+    public double getAverage()
+    {
+        double sum = 0;
+        for (Integer score: grades)
+        {
+            sum = sum + score;
+        }
+        
+        double average = 0;
+        if (grades.size() &gt; 0)
+        {
+            average = sum / grades.size();
+        }
+        
+        return average;
+    }
+    
+    /**
+     * Gets the name of this Student
+     * @return the name
+     */
+    public String getName()
+    {
+        return name;
+    }
+}
+</pre></td></tr></table>
+</div>
+<p class="header score">Score</p>
+<div class="score">
+<p class="score">4/4</p>
+</div>
+<div class="footnotes"><div class="footnote">2017-03-21T19:49:51Z</div>
+</div>
+</body></html>

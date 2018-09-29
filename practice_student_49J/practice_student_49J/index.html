@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+   code {color:green;
+   font-family: "Courier New", Courier, monospace;
+   font-size:1.1em;
+   font-weight:bold;
+   }
+   
+    .attention{
+	color:red;
+   }
+   
+   .example{
+	background-color:#CCC;
+	margin-left:2em;
+		
+   }
+   
+   .segment{
+	   clear: none;
+    background-color: #FFFACD /* lemonchiffon */;
+    border-color: #00008B /* darkblue */;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-style: solid;
+    border-left-width: medium;
+    border-top-width: thin;
+    border-right-width: thin;
+    border-bottom-width: thin;
+    }
+   
+.draft {background-color:#fffff8;
+      border:thin solid #E37500;
+}
+</style>
+<title>Practice 49J</title>
+</head>
+
+<body>
+<p class="attention">Reminder: You can only use the Internet for Codecheck to check your programs and Canvas to upload</p>
+<h1>Practice CS49J</h1>
+<p style="background-color: #ccffff">1</p>
+<p>Complete   application <code>DoingInput</code>. (It will have a main method.) The application will read data from the keyboard and process it</p>
+<p>In the main method, ask the user to enter the name of an animal</p>
+<ul>
+  <li>If the animal is &quot;African lion&quot;, print &quot;Fierce&quot;</li>
+  <li>If the animal is &quot;African elephant&quot;, print &quot;BIG&quot;</li>
+  <li>If it is any other animal, print &quot;Wouldn't you like a kitten?&quot;</li>
+</ul>
+<p>Ask the user to enter a double <br />
+  Ask the user to enter an integer</p>
+<ul>
+  <li>If the integer is not 0, divide the double by the integer and print the answer to 2 decimal places. </li>
+  <li>If the integer  is 0, print an error message: &quot;Can not divide by 0&quot;</li>
+</ul>
+<p>Use these prompts</p>
+<p>System.out.print(&quot;Enter the name of an animal: &quot;);<br />
+  System.out.print(&quot;Please enter a double: &quot;); <br />
+  System.out.print(&quot;Now enter an integer: &quot;);</p>
+<p>Be sure to use the appropriate type of if statement.</p>
+<p>Only create one Scanner</p>
+<p><a href="http://www.codecheck.it/files/1702260248e90an0nmb3xzi934cd2l4i9gz">Codecheck URL</a></p>
+<p style="background-color: #ccffff">2</p>
+<p>Complete the class <code>Tiles</code> which manages an ArrayList of Rectangles. Each rectangle represents a ceramic floor tile. <code>Tiles</code> contains a constructor and methods to process the rectangles</p>
+<p>Provide a constructor that initializes the instance variable with an empty array list. Call the instance variable <em>tiles</em>.</p>
+<p>Provide methods</p>
+<ul>
+  <li><code>add(Rectangle r) </code>which adds a Rectangle object to the Tiles</li>
+  <li><code>totalArea() </code>gets the sum of the areas of all the Rectangles in this Tiles</li>
+  <li><code>largest() </code>gets the Rectangle with the largest area. If more than one Rectangle has the same ares, return the first.</li>
+  <li><code>toString() </code>gets a string representation of the object. This is given to you</li>
+  <li>a private helper method<code> area(Rectangle r) </code>to get the area of a Rectangle. Use the helper method in the implementation of<code> totalArea()</code> and <code>largest()</code></li>
+</ul>
+<p>Provide Javadoc<br>
+  <br/>
+<a href="http://www.codecheck.it/files/16122804551rnf6kxx8qha22lcpp9qvfqyt">Codcheck URL</a></p>
+<p style="background-color: #ccffff">3</p>
+<p>Write a class <code>City</code>. The constructor takes a String parameter. This is provided for you. You need to copy the starter code from Codecheck</p>
+<p>You provide the methods:</p>
+<ul>
+  <li><code>public String getCity()</code> gets the name of the city</li>
+  <li><code>public boolean doubleLetter()</code> determines if the city name contains a double letter. Returns true is it does. Otherwise it returns false. Note: double letter means two of the same letter next to each other. The test is case-insensitive. For example Seacliff and Lloydton have a double letters. Saratoga  does not. </li>
+</ul>
+<p>Hints</p>
+<ul>
+  <li>The loop needs to stop on the next to the last letter (to avoid StringIndexOutOfBoundsException)</li>
+  <li>Do not change the instance variable</li>
+</ul>
+<p><a href="http://www.codecheck.it/files/161203051387k11mp6zg02a2txpwgc8klb7">Codecheck URL</a></p>
+<p style="background-color: #ccffff">4</p>
+<p><code>Util2D</code> creates an manages a 2d array of ints. It has a constructor that takes a 2d array as a parameter and assigns it to the instance variable. You write the whole class</p>
+<p>Provide the constructor</p>
+<p>Provide these methods</p>
+<ul>
+  <li><code>getSmallest()</code> Gets the smallest integer in the array</li>
+  <li><code>numberOfEvenInColumn</code>(int column) Gets the number of even integers in the specified column. Remember both positive and negative numbers can be even.</li>
+  <li><code>last()</code> Gets the element in the last column of the last row</li>
+  <li><code>contains(int target)</code> Returns true if the target is in the array, otherwise false</li>
+</ul>
+<p>Povide Javadoc</p>
+<p><br/>
+<a href="http://www.codecheck.it/files/1612290412bkd69cqglfoayhuq6tupidy7n">Codecheck URL:</a></p>
+</body>
+</html>

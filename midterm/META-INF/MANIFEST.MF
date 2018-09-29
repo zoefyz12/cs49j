@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Created-By: 1.8.0_121 (Oracle Corporation)
+
+Name: codecheck.log
+SHA-256-Digest: RwDoMXEuAnm+qbW1aE65PJZ/kL7NK7zg113iWZPql0M=
+
+Name: report.html
+SHA-256-Digest: awhdvupi0CAhCu2kVFiW7DOH2Cq9X8dl7mtwLoNU5Lw=
+
+Name: Gradebook.java
+SHA-256-Digest: 5U8+4p5HJXsnMZFVpAjxUk3Af7vghuqpPrlzTIv+Xys=
+
+Name: codecheck.out
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+

@@ -1,0 +1,18 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: IuGzFr7tpfFkDAXUbh/h9tOOCuZiT
+ zehq4oKM4uIQSE=
+SHA-256-Digest-Manifest: i1L1KZrZO6k85RGzlT81AzRU2KnXXgWpHbpUu423rDA=
+Created-By: 1.8.0_121 (Oracle Corporation)
+
+Name: codecheck.log
+SHA-256-Digest: QvJq6u+X35qNs4rMyoCcVzLmmP4zYeILYFA4tXL2Isc=
+
+Name: report.html
+SHA-256-Digest: A5oAy8du8LMsKqCSJbFyb8r2Tby4NYs8WgeLr4yfAhk=
+
+Name: Gradebook.java
+SHA-256-Digest: sye8M4chS+LzeTIe47DOWkeFhVwHcpmBvBnpzEgBrGg=
+
+Name: codecheck.out
+SHA-256-Digest: b52xXFI58Bk2vYsOBFW4SeAtUihwAfI35pqcs+KFu0w=
+

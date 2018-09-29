@@ -1,0 +1,141 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+   code {color:green;
+   font-family: "Courier New", Courier, monospace;
+   font-size:1.1em;
+   font-weight:bold;
+   }
+   
+    .attention{
+	color:red;
+   }
+   
+   .example{
+	background-color:#CCC;
+	margin-left:2em;
+		
+   }
+   
+   .segment{
+	   clear: none;
+    background-color: #FFFACD /* lemonchiffon */;
+    border-color: #00008B /* darkblue */;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-style: solid;
+    border-left-width: medium;
+    border-top-width: thin;
+    border-right-width: thin;
+    border-bottom-width: thin;
+    }
+   
+</style>
+<title>Midterm S17</title>
+</head>
+
+<body>
+<h1>CS46J Spring 2017 Midterm</h1>
+<p class="attention">Reminder: You can only use the Internet to access Codecheck (to check your programs) and Canvas (to upload) </p>
+<p class="attention">Remember not to create packages. Use the default package</p>
+<p style="background-color: #ccffff">1</p>
+<p>Write an application (it has a main method) called Inputting to get some keyboard input from the user. </p>
+<p>Ask the to enter his/her favorite dessert. Use this prompt. (I suggest copy/pasting so there is no mistake)</p>
+<ul>
+  <li>System.out.print(&quot;Enter your favorite dessert: &quot;);</li>
+</ul>
+<p>If the user enters &quot;ice cream&quot;, print &quot;Delicious&quot;. If the enters &quot;chocolate cake&quot;, print &quot;Yummy&quot;. If he enters anything else, print &quot;All sugar is good&quot;</p>
+<p>Now ask the user for a double and then ask for an integer. Use these prompts.</p>
+<ul>
+  <li>System.out.print(&quot;Enter a double: &quot;);</li>
+  <li>System.out.print(&quot;Enter an integer: &quot;);</li>
+</ul>
+<p>Multiply the two and print the result. Then print a message according to this table</p>
+<table width="36%" border="2" cellspacing="1" cellpadding="1">
+  <tr>
+    <th scope="col">if</th>
+    <th scope="col">print</th>
+  </tr>
+  <tr>
+    <td>the number is greater than 0</td>
+    <td>&quot;That's a positive&quot;</td>
+  </tr>
+  <tr>
+    <td>the number is 0</td>
+    <td>&quot;That's nothing&quot;</td>
+  </tr>
+  <tr>
+    <td>the number is less than 0</td>
+    <td>&quot;What a minus&quot;</td>
+  </tr>
+</table>
+<p>Remember the difference between Scanner's next and nextLine methods</p>
+<p>&nbsp;</p>
+<p><a href="http://www.codecheck.it/files/1703130133cwpqmpbxrwn8139mrdnpq3edq">1 URL</a></p>
+<p style="background-color: #ccffff">2</p>
+<p>Write a <code>WordArray</code> class. The <code>WordArray</code> class has a constructor that takes an array of Strings as a parameter. </p>
+<p>Provide the instance variable and the constructor.</p>
+<p>Provide a method <code>beginnings </code>which returns a string consisting of the first 3 characters of each string in the array, separated by space. If the word has less than 3 characters, just use the word.</p>
+<p><a href="http://www.codecheck.it/files/17031217222joel1khfmj3wjxli37ywjrxe">2 URL</a></p>
+<p style="background-color: #ccffff">3</p>
+<p>Complete the  <code>Verb</code> verb class which represents a verb in English. This is related to, but different from, one of your homework problems.<br>
+</p>
+<p>You are provided with  a constructor that takes a String containing the verb as as a parameter . You are also given a <code>getVerb()</code> method which returns the  verb.<br>
+</p>
+<p>Provide this  method:<br>
+  <br>
+<code>getGerund()</code>- returns the gerund form of the verb. A gerund is a verb form ending in &quot;ing&quot;.</p>
+<p>Here are the rules for forming the gerund. (The rules are actually a little more complicated than this, but just use these rules.)</p>
+<ul>
+  <li>If the verb ends in an "e", remove the &quot;e&quot; and add &quot;ing&quot;
+    <ul>
+      <li>past tense of hope is hoping</li>
+    </ul>
+  </li>
+  <li>If the verb is three characters long and ends in a consonant, double the consonant and then add &quot;ing&quot;
+    . The vowels are aeiouy.
+      <ul>
+      <li>past tense of hop is hopping</li>
+      </ul>
+  </li>
+  <li>In all other cases,  add &quot;ing&quot; to the end of the verb</li>
+</ul>
+<p class="attention">Note: only use one return statement.</p>
+<p><a href="http://www.codecheck.it/files/1703121739av7daj9daq3rhqvlyotfc2t30">3 URL</a></p>
+<p style="background-color: #ccffff">4</p>
+<p>Write a class <code>Weather</code>. <code>Weather</code> has a constructor that takes a 2D array of doubles representing several weeks of high temperatures in Fahrenheit. Provide a method <code>countFreezing</code> that returns the number of days where the high temperature was below freezing (32 degrees Fahrenheit) That is the same as the number of elements in the array that are below 32.</p>
+<p>Provide the instance variable.</p>
+<p>Provide the constructor:</p>
+<ul>
+  <li><code>public Weather(double[][] array)</code></li>
+</ul>
+<p> Provide this method</p>
+<ul>
+  <li><code>public int countFreezing()</code> returns the number of the elements that are less than freezing (which is 32 &deg;)</li>
+</ul>
+<p>&nbsp;</p>
+<p><a href="http://www.codecheck.it/files/1703120335a2jw4pbtuhfw68tst5hzioh4e">4 URL</a></p>
+<p style="background-color: #ccffff">5</p>
+<p>You are given a <code>Student</code> class. You can find the <a href="docs/Student.html">documentation for the Student class</a> here:</p>
+<p>You will write the <code>Gradebook</code> class which manages <code>Student</code> objects.   It has this constructor and these methods</p>
+<ul>
+  <li><code>public Gradebook() </code>- Creates an empty Gradebook containing no students</li>
+  <li><code>public void add(Student s)</code> - Adds a Student to the Gradebook</li>
+  <li><code>public double getClassAverage()</code> - Gets the average score of the students in the Gradebook or 0 if the Gradebook is empty</li>
+</ul>
+<p><a href="http://www.codecheck.it/files/17030916426sgwm7x4t2g5b7qfbymn6zv5c">5 URL</a><br>
+</p>
+<p style="background-color: #ccffff">Uploading to Canvas</p>
+<p>You will upload 5 signed.zip, all at the same time. </p>
+<p>Double check that the files uploaded before leaving.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+</html>

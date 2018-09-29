@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=description\ price\ age
+comment0.target=Toy(java.lang.String,\ double,\ int)
+comment1.params=
+comment1.target=int\ getAppropriateAge()
+comment2.params=
+comment2.target=java.lang.String\ getDescription()
+numComments=3
