@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+   code {color:green;
+      font-family: "Courier New", Courier, monospace;
+      font-size:1.1em;
+      font-weight:bold;
+   }
+   
+    .attention{
+	   color:red;
+   }
+   .examaple {
+	   background-color:#FFFACD;
+	   margin-left:2em;
+   }
+   
+</style>
+<title>Final S17 49J</title>
+</head>
+
+<body>
+<h2>Final CS49J  Spring 2017</h2>
+<p class="attention">Do not use Safari. If you opened this with Sarari, close it and  right click on index.html and select &quot;Open with&quot; Google Chrome</p>
+<p style="background-color: #ccffff">1</p>
+<p>Write a class <code>ClassManager</code> which manages an ArrayList of String names. <code>ClassManager</code> has an ArrayList of Strings containing the names of students in the classas an instance variable. The constructor initializes the instance variable with an empty ArrayList</p>
+<p>Provide the following methods:</p>
+<ul>
+  <li><code>public void enroll(String name)</code> adds a name to the list of studentsenroll</li>
+  <li><code>public void sort() </code>sorts the list of names. Do not write your own sort. Use the one from the Collections class in the Java library</li>
+  <li><code>public double averageLength()</code> gets the average length of the names</li>
+  <li><code>public String getNames()</code> gets a String consisting of all the names separated by a space.</li>
+</ul>
+<p><a href="http://www.codecheck.it/files/17051017114gjsjlzcvbml7jb95e62avaqk">1 URL</a></p>
+<p style="background-color: #ccffff">2</p>
+<p>Finish the class <code>State</code> which models a US state. </p>
+<p>Add an <code>equals</code> method and a <code>toString</code> method which override the equals and toString methods of <code>Object</code></p>
+<p>The <code>States</code> are equal if all the instance variables are equal.</p>
+<p>The toString method should return a string with this format: (notice no space after the comma)</p>
+<p><tt>State[name=Oregon,population=4091000]</tt></p>
+<p><a href="http://www.codecheck.it/files/17051021013m78s218nlvlr3nyc1d7da5b4">2 URL</a><br />
+</p>
+<p style="background-color: #ccffff">3</p>
+<p>Write a subclass of <code>Product</code> (included in Codecheck) called <code>Car</code>. In addition to description and price, a <code>Car</code> has a String instance variable <em>color</em>. </p>
+<p>The constructor that takes  the parametrs description, price and color in that order. Save the color is all lowercase.</p>
+<p>Provide these method:</p>
+<ul>
+  <li><code>public String getColor()</code> gets the color of this car</li>
+  <li><code>public boolean isPrimaryColor()</code>returns true if the color is red or yellow or blue</li>
+  <li><code>public String getDescription()</code> which overrides <code>Product's</code> <code>getDescription</code> method and returns the description concatenated with the color<br>
+    Honda 
+  red</li>
+</ul>
+<p>Do not redefine description and price in the <code>Car</code> class. Do not override any other methods except <code>getDescription()</code></p>
+<p><a href="http://www.codecheck.it/files/17051021222we185nk87rnlpfgk2m3ip4lj">3 URL</a></p>
+<p style="background-color: #ccffff">4</p>
+<p>You are going to work with  baby name files again. Complete the <code>GirlNamesWithZ</code> application. Read the file and print a list of girl's names that contain  the letter z or Z. </p>
+<p>Do not change the declaration of the filename. Codecheck will run it twice. Once with each file name below.</p>
+<p>Do not use try / catch here. Just declare that the method throws an exception.</p>
+<p>Copy these file into your project: <br>
+<a href="babynames2000s.txt">babynames2000s.txt</a><br>
+<a href="babynames1900s.txt">babynames1900s.txt </a></p>
+<p><a href="http://www.codecheck.it/files/17051117574xmvnm4la56oozj2qopw5g4n2">4 URL</a></p>
+<p style="background-color: #ccffff">5</p>
+<p>Complete the class <code>ComparingToddlers</code>. It defines an array of <code>Toddlers</code>. </p>
+<p>First print the names of the <code>Toddlers</code> in the array in descending order by weight and then again in descending order by height. Use the Comparator interface to create the Comparator objects to pass to the sort method.</p>
+<p>A <code>Toddler</code> class is included for you in Codecheck. Its constrcutor takes 2 parameters: name, height, weight</p>
+<p><a href="http://www.codecheck.it/files/170512034447uo2k4c2rzdeo81otcu3uhhr">5 URL</a><br />
+</p>
+<p style="background-color: #ccffff">6</p>
+<p>There is a silly children's activity for tranforming words called &quot;pig latin&quot; In pig latin, you remove the first letter of the word, put it at the end, and add &quot;ay&quot; after it.</p>
+<p>pig becomes igpay<br>
+latin becomes atinlay</p>
+<p>You are to complete the class  <code>PigLatin</code>. You will read each word from a text file, transform the word to pig latin, and print it. There may be more than one word on a line so use Scanner's next() method</p>
+<p>Get the file name from the command line. If a file name is not specified on the command line, print this message:</p>
+<pre class="examaple">&quot;Usage: java PigLatin infile&quot;</pre>
+<p>If the file does not exist, catch the exception and print</pre>
+<pre class="examaple">&quot;No such file: &quot; + filename</pre>
+
+<p>where filename is the name specified for the file. You can use either try / catch or try-with-resourse.</p>
+<p>Codecheck will execute yor program multiple times with different file names</p>
+<p>You can test with this file <a href="words.txt">words.txt</a></p>
+<p><a href="http://www.codecheck.it/files/17051205125r2ykpmkn0dhra9ivdijqrmuk">6 URL</a></p>
+<p style="background-color: #ccffff">7</p>
+<p>A passage of text is rated for difficulty by the length of the words it contains. You are to complete the class <code>WordLengthFinder</code> to group words by their length. </p>
+<p>You are given a string. Create a Scanner to process the String. You are to print the words with the shortest words first. Within words of the same length, you are to print the words alphabetically. </p>
+<p>You can use a Map where the keys are the Integer length and the values are the Set of the words of that length.  This  is similar to hw 17.</p>
+<p>You can print the Set mySet like this: <code>System.out.println(mySet);</code></p>
+<p>For the string "Mary had a little lamb", the output would look like this</p>
+<pre class="examaple">[a]
+[had]
+[Mary, lamb]
+[little]</pre>
+<p>In order to get words without following punctuation, create a scanner for the String and set the delimiter to use:<code> scan.useDelimiter("[^A-Za-z0-9]+");</code></p>
+<p>Codecheck will run your program more than once. Note that the second string is fairly long and you will have to scroll right to see expected and actual output.</p>
+<p><a href="http://www.codecheck.it/files/17051515239sajmn1sx4v4m6j8j8fc4d439">7 URL</a></p>
+<p>____________________________</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

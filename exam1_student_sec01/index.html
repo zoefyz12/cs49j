@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+   code {color:green;
+   font-family: "Courier New", Courier, monospace;
+   font-size:1.1em;
+   font-weight:bold;
+   }
+   
+    .attention{
+	color:red;
+   }
+   
+   .example{
+	background-color:#CCC;
+	margin-left:2em;
+		
+   }
+   
+   .segment{
+	   clear: none;
+    background-color: #FFFACD /* lemonchiffon */;
+    border-color: #00008B /* darkblue */;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-style: solid;
+    border-left-width: medium;
+    border-top-width: thin;
+    border-right-width: thin;
+    border-bottom-width: thin;
+    }
+   
+</style>
+<title>Exam1 S17 section 01</title>
+</head>
+
+<body>
+<p class="attention">Reminder: You can only use the Internet for Codecheck to check your programs and Canvas to upload</p>
+<h1>Exam 1 CS46A S17 Section 1 </h1>
+<p style="background-color: #ccffff">1</p>
+<p>Complete   application <code>InputForYou</code>. (It will have a main method.) The application will read data from the keyboard and process it</p>
+<p>In the main method, ask the user what state he lives in</p>
+<ul>
+  <li>If the state is &quot;New Mexico&quot;, print &quot;It is awfully hot there&quot;</li>
+  <li>If the state is &quot;New York&quot;, print &quot;I do not like crowds&quot;</li>
+  <li>If it is any other state, print &quot;You should come to California&quot;</li>
+</ul>
+<p>Ask the user to enter a double <br />
+Ask the user to enter an integer</p>
+<ul>
+  <li>If the integer is not 0, divide the double by the integer and print the answer to 2 decimal places. </li>
+  <li>If the integer  is 0, print an error message: &quot;Can not divide by 0&quot;</li>
+</ul>
+<p>Use these prompts</p>
+<p>System.out.print(&quot;What state do you live in: &quot;);<br />
+  System.out.print(&quot;Enter a double: &quot;); <br />
+System.out.print(&quot;Enter an integer: &quot;);</p>
+<p>Be sure to use the appropriate type of if statement.</p>
+<p>Only create one Scanner</p>
+<p><a href="http://www.codecheck.it/files/1702222350co8zxv0k9iqsf70x9yxnkkp74">Codecheck URL</a></p>
+<p style="background-color: #ccffff">2</p>
+<p>Complete the class <code>JupiterFlag</code> which model the shape below. You write the whole class. You are given a tester.</p>
+<p><img src="images/exam1_sec01_2.png" width="88" height="93" alt="screenshot" /></p>
+<p>In the constructor, you are given the x, y coordinates of the center of the circle and the radius. </p>
+<p>In the draw method, construct a circle with that center and radius. Construct a rectangle that bounds the circle. Fill the rectangle with blue using the predefined color in the Color class. Create a custom color with red = 200, green = 50, and blue = 10. Use it to fill the circle. Draw a line from the upper left of the rectangle to the bottom right. </p>
+<p>Fill the rectangle, then the circle, and then draw the line.</p>
+<p> HINT: Notice that you are given the center of the circles , but to draw an Ellipse you need to calculate the upper  left-hand corner of the bounding rectangle and the diameter. You did this in Lab 4.</p>
+<p><a href="http://www.codecheck.it/files/17022305418s1lgw66kvuy5p4bgcnvqplls">Codecheck URL</a></p>
+<p style="background-color: #ccffff">3</p>
+<p>You are given a class <code>Engine</code> which represents a child's toy train engine that moves on a straight track. At any given time, the <code>Engine</code> is at a specific location. The <code>Engine</code> can move either forwards or backwards by a specified amount. It does not turn around. It can move from 0 to 20 along the track in either direction. The <code>Engine</code> can not go beyond the end of the track. i.e. its position can never be greater than 20 or less than 0. When the <code>Engine</code> is created it is set at a particular location on the track which is specified in the constructor.</p>
+<ul>
+  <li>Modify the constructor so the <code>Engine</code> can not be placed beyond either end of the track. If the parameter to the constructor is off the track, set the location to 0.</li>
+  <li>Modify the <code>moveForward</code> method so that the <code>amountToMove</code> can not  move the <code>Engine </code>off the track. If the <code>amountToMove</code> would move the <code>Engine</code> beyond 20, set the location to 20. If the <code>amountToMove</code> is negative, do not move the <code>Engine</code>. </li>
+  <li>Modify the <code>moveBackward</code> method so that the  <code>amountToMove</code> can not  move the <code>Engine </code>off the track. If the <code>amountToMove</code> would move the <code>Engine</code> beyond 0, set the location to 0. If the <code>amountToMove</code> is negative, set the location to 0. </li>
+</ul>
+<p>Use the appropriate if statements. Do not have &quot;do nothing&quot; if or else clauses.</p>
+<a href="http://www.codecheck.it/files/17022502375ldskyor01wc90dwjakiv9zlu"><br />
+</a>
+<p><a href="http://www.codecheck.it/files/17022502375ldskyor01wc90dwjakiv9zlu">Codecheck URL</a>
+</p>
+<p style="background-color: #ccffff">4</p>
+<p>Write a class <code>WaterBottle</code>. A <code>WaterBottle</code> has a capacity of 16.7 fluid ounces.  </p>
+<p>Define a constant <code>CAPACITY_IN FLUID_OUNCES</code> set to 16.7</p>
+<p>When a <code>WaterBottle</code> is constructed, it is full. That means the constructor needs to initialize the current amount using the constant</p>
+<p><code>WaterBottle</code> has these methods:</p>
+<ul>
+  <li>a method <code>drink</code> which takes the number of fluid ounces drunk as a double and reduces the current amount by that amount. It has no return value</li>
+  <li>a method <code>fill</code> which fills the <code>WaterBottle</code> back to capacity using the constant. It has no return value</li>
+  <li>a method <code>getAmount</code> which returns the current amount in the <code>WaterBottle</code></li>
+</ul>
+<p>You do not need to validate the parameters. You can assume the user never tries to drink when the bottle is empty or to fill it beyond its capacity</p>
+<p>Provide Javadoc for the class, the constructor and the methods</p>
+<p>There is no starter class for <code>WaterBottle.</code> You will write the whole class yourself, but there is a tester.</p>
+<p><a href="http://www.codecheck.it/files/17022503407t6ebumsyhkt0cigxyj3q55nb">Codecheck URL</a></p>
+<p style="background-color: #ccffff">5</p>
+<p>Write an application (has a main method) called <code>MonetPainting</code>. You will write the whole class.</p>
+<p>Do  the following:</p>
+<ul>
+  <li>construct a <code>Picture</code> from the source &quot;monet.jpg&quot;</li>
+  <li>print the width</li>
+  <li>print the height</li>
+  <li>print the number of pixels in the Picture. The Picture class has a method pixels that returns the number of pixels</li>
+  <li>make the picture half as wide and half as tall (use the grow method with negative parameters)</li>
+  <li>print the width</li>
+  <li>print the height</li>
+  <li>print the x coordinate of the picture</li>
+  <li>print the y coordinate of the picture</li>
+  <li>draw the picture</li>
+</ul>
+<p>You can look at the documentation of the Picture class in Bluej if you need to.</p>
+<p><a href="http://www.codecheck.it/files/1702250416yyyx88xtwg3jjvb3mc95av7h">Codecheck URL</a></p>
+<p>&nbsp;</p>
+</body>
+</html>
